@@ -5,7 +5,7 @@ def createFoodTable(connection: Connection):
     connection.execute("""
         CREATE TABLE IF NOT EXISTS foods (
         id SERIAL PRIMARY KEY,
-        name VARCHAR(255),
+        name VARCHAR(255) UNIQUE NOT NULL,
         price FLOAT
     );
     """)

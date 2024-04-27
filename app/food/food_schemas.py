@@ -13,6 +13,7 @@ class CreateFood(BaseModel):
     name: str
     price: float
 
+
 class UpdateFood(BaseModel):
     name: Optional[str] = None
     price: Optional[float] = None
